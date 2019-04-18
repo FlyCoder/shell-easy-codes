@@ -5,7 +5,7 @@
 keywords_file=$1
 searching_file=$2
 prefix=$3
-while read line || [[ -n "${line}" ]]
+while read line || [[ -n "$line" ]]
 do
     if [ ! -z "$line" ]; then
         word="$prefix$line"
